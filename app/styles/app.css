@@ -43,7 +43,7 @@ body > .ember-view {
   width: 200px;
 }
 
-.square-box__click-zone {
+.square-box_content {
   display: flex;
   justify-content: center;
   align-items: center;
