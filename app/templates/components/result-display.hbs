@@ -1,0 +1,12 @@
+{{#each boxes as |box|}}
+  <SquareBox
+    class={{concat
+      "result-display__square-box "
+      "square-box--tiny "
+      "square-box--"
+      box.key
+    }}
+  >
+    <span class="result-display__source-type">{{box.source}}</span>
+  </SquareBox>
+{{/each}}
