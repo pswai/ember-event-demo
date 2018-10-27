@@ -22,7 +22,7 @@ body > .ember-view {
   height: 100%;
 }
 
-.introduction {
+.text-center {
   text-align: center;
 }
 
@@ -61,6 +61,7 @@ body > .ember-view {
   align-items: center;
   height: 100%;
   width: 100%;
+  user-select: none;
 }
 
 .square-box--big {
