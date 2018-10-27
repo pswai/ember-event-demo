@@ -1,0 +1,16 @@
+<div
+  class="top-click-zone"
+  role="button"
+  onclick={{action "handleNative"}}
+  {{action "handleEmber"}}
+>
+  <SquareBox
+    class="square-box--big square-box--red"
+    @key="red"
+  >
+    <SquareBox
+      class="square-box--blue"
+      @key="blue"
+    />
+  </SquareBox>
+</div>

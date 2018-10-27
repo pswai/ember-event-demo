@@ -1,13 +1,15 @@
-{{#each boxes as |box|}}
-  <div
-    class={{concat
-      "square-box "
-      "result-display__square-box "
-      "square-box--small "
-      "square-box--"
-      box.key
-    }}
-  >
-    <span class="square-box_content">{{box.source}}</span>
-  </div>
-{{/each}}
+<div class="result-display__content">
+  {{#each boxes as |box|}}
+    <div
+      class={{concat
+        "square-box "
+        "result-display__square-box "
+        "square-box--small "
+        "square-box--"
+        box.key
+      }}
+    >
+      <span class="square-box__content">{{box.source}}</span>
+    </div>
+  {{/each}}
+</div>

@@ -31,10 +31,7 @@ const reducer = (state = DEFAULT_STATE, action) => {
       };
 
     case RESET:
-      return {
-        ...state,
-        boxes: [],
-      };
+      return DEFAULT_STATE;
   }
 
   return state;

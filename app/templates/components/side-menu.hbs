@@ -1,0 +1,33 @@
+<ul class="side-menu__content">
+  <li {{action reset}}>
+    <a class="side-menu__button side-menu__button--reset">Reset</a>
+  </li>
+
+  <li class="side-menu__horizontal-line"></li>
+
+  <li {{action reset}}>
+    {{#link-to
+      'basic-case'
+      class="side-menu__button"
+      activeClass="side-menu__button--active-route"
+    }}Basic{{/link-to}}
+  </li>
+
+  <li {{action reset}}>
+    {{#link-to
+      'advanced-case'
+      class="side-menu__button"
+      activeClass="side-menu__button--active-route"
+    }}Advanced{{/link-to}}
+  </li>
+
+  <li {{action reset}}>
+    {{#link-to
+      'expert-case'
+      class="side-menu__button"
+      activeClass="side-menu__button--active-route"
+    }}Expert{{/link-to}}
+  </li>
+</ul>
+
+<div class="side-menu__handle">Menu</div>
