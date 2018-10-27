@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "ember build",
-    "doc": "ember build --output-path ./docs",
+    "doc": "ember build -prod -o ./docs",
     "lint:js": "eslint .",
     "start": "ember serve",
     "test": "ember test"
