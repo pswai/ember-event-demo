@@ -22,6 +22,10 @@ body > .ember-view {
   height: 100%;
 }
 
+.introduction {
+  text-align: center;
+}
+
 .top-click-zone {
   z-index: 1000;
   opacity: 0.95;
