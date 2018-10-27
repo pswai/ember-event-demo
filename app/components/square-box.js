@@ -1,5 +1,6 @@
 import Component from '@ember/component';
 import { connect } from 'ember-simple-redux';
+import { addBox } from '../state/duck';
 
 const SquareBox = Component.extend({
   classNames: ['square-box'],
@@ -20,12 +21,7 @@ const SquareBox = Component.extend({
 });
 
 const mapDispatchToProps = (dispatch, { key }) => ({
-  addBox: source =>
-    dispatch({
-      type: 'ADD_BOX',
-      key,
-      source,
-    }),
+  addBox: source => dispatch(addBox(key, source)),
 });
 
 export default connect(

@@ -30,22 +30,22 @@ body > .ember-view {
 .result-display {
   position: fixed;
   top: 0;
-  left: calc((100% - 1280px) / 2);
+  left: calc((100vw - 80vh - 80px) / 2);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 1280px;
+  width: calc(80vh + 80px);
 }
 
 .result-display__square-box {
   margin: 5px;
   font-weight: bold;
-  font-size: 8em;
+  font-size: 8vh;
 }
 
 .square-box {
-  height: 200px;
-  width: 200px;
+  height: 25vh;
+  width: 25vh;
 }
 
 .square-box_content {
@@ -57,13 +57,13 @@ body > .ember-view {
 }
 
 .square-box--big {
-  height: 500px;
-  width: 500px;
+  height: 60vh;
+  width: 60vh;
 }
 
 .square-box--small {
-  height: 150px;
-  width: 150px;
+  height: 10vh;
+  width: 10vh;
 }
 
 .square-box--blue {

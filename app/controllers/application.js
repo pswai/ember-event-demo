@@ -1,12 +1,9 @@
 import Controller from '@ember/controller';
+import { addBox } from '../state/duck';
 
 export default Controller.extend({
   addBox(source) {
-    this.simpleReduxStore.dispatch({
-      type: 'ADD_BOX',
-      key: 'no-color',
-      source,
-    });
+    this.simpleReduxStore.dispatch(addBox('no-color', source));
   },
 
   actions: {

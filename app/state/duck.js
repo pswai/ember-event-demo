@@ -2,11 +2,24 @@ const DEFAULT_STATE = {
   boxes: [],
 };
 
+const ADD_BOX = 'ADD_BOX';
+const RESET = 'RESET';
+
+export const addBox = (key, source) => ({
+  type: ADD_BOX,
+  key,
+  source,
+});
+
+export const reset = () => ({
+  type: RESET,
+});
+
 const reducer = (state = DEFAULT_STATE, action) => {
   const { type } = action;
 
   switch (type) {
-    case 'ADD_BOX':
+    case ADD_BOX:
       return {
         ...state,
         boxes: state.boxes.concat([
@@ -15,6 +28,12 @@ const reducer = (state = DEFAULT_STATE, action) => {
             source: action.source,
           },
         ]),
+      };
+
+    case RESET:
+      return {
+        ...state,
+        boxes: [],
       };
   }
 
