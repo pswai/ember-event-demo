@@ -2,7 +2,7 @@ import Component from '@ember/component';
 import { connect } from 'ember-simple-redux';
 import { addBox } from '../state/duck';
 
-const BasicCaseDemo = Component.extend({
+const AdvancedCaseDemo = Component.extend({
   classNames: ['case-demo', 'top-click-zone'],
 
   click() {
@@ -29,4 +29,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   null,
   mapDispatchToProps
-)(BasicCaseDemo);
+)(AdvancedCaseDemo);

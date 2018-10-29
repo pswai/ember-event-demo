@@ -89,7 +89,7 @@ body > .ember-view {
 .side-menu {
   position: fixed;
   left: 0;
-  top: 10vh;
+  top: 5vh;
   display: flex;
 }
 
@@ -174,4 +174,20 @@ body > .ember-view {
 
 .case-demo__case-button:active {
   background-color: #bfbfbf;
+}
+
+.case-demo__case-source {
+  text-align: left;
+  padding: 0 3vw;
+  font-size: 1.5vh;
+}
+
+.advanced-case__source {
+  display: flex;
+  justify-content: center;
+}
+
+.advanced-case__source pre {
+  text-align: left;
+  font-size: 1.5vh;
 }
