@@ -1,11 +1,11 @@
 {
   "name": "event-seq",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "description": "Small description for event-seq goes here",
-  "repository": "",
+  "repository": "https://github.com/pswai/ember-event-demo",
   "license": "MIT",
-  "author": "",
+  "author": "PSWai <parksoon_my@hotmail.com>",
   "directories": {
     "doc": "doc",
     "test": "tests"
